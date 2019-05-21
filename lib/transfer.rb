@@ -1,3 +1,5 @@
+require 'pry'
+
 class Transfer
  
  attr_accessor :sender, :receiver, :status, :amount
@@ -11,7 +13,7 @@ class Transfer
   
   def valid?
     if BankAccount.each do |account|
-      
+      binding.pry 
         status == "open"
       end
       true 
