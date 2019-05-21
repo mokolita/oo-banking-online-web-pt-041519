@@ -13,10 +13,8 @@ class Transfer
   
   def valid?
     if BankAccount.each do |account|
-      
-        status == "open"
-      end
-      true 
+      account.valid? == true 
+    end 
     else 
       false 
     end 
