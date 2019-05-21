@@ -13,7 +13,7 @@ class Transfer
   
   def valid?
     if BankAccount.each do |account|
-      binding.pry 
+      
         status == "open"
       end
       true 
