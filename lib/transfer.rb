@@ -12,12 +12,7 @@ class Transfer
   end 
   
   def valid?
-    if BankAccount.each do |account|
-      account.valid? == true 
-    end 
-    else 
-      false 
-    end 
+    @sender.valid? && @receiver.valid? 
   end 
  
  
